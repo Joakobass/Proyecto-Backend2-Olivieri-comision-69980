@@ -1,0 +1,27 @@
+<main class="container-main">
+        <section class="container d-flex justify-content-center">
+            <div class="d-flex w-50 flex-column align-items-center justify-content-center section-border pt-3 pb-3">
+                <h1>LOGIN</h1>
+                <form action="/api/sessions/login" method="post" class="w-75">
+                    <div class="mb-3 mt-3">
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña"
+                        name="password">
+                    </div>
+                    {{!-- <div class="mb-3 text-center">
+                        <a href="">Restablecer contraseña</a>
+                    </div> --}}
+                    <div class="container-btns">
+                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    </div>
+                </form>
+                <a class="mt-2" href="/sessions/register"><button class="btn btn-info btn-sm">Registrarse</button></a>
+                
+            </div>
+        </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
